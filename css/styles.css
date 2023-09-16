@@ -228,7 +228,6 @@ nav img {
 /* navbar ends */
 
 section {
-    max-width: 100%;
     display: flex;
     gap: 13px;
 }
@@ -265,7 +264,7 @@ section {
     width: 20px;
 }
 
-.left-container li:first-child::after {
+.left-container li:nth-child(-n+4)::after {
     position: absolute;
     content: 'Home';
     padding: 5px 10px;
@@ -277,40 +276,15 @@ section {
     transition: visibility 0s ease 0.6s;
 }
 .left-container li:nth-child(2)::after{
-        position: absolute;
-            content: 'Shorts';
-            padding: 5px 10px;
-            background: #434343;
-            border: 1px solid white;
-            left: 50px;
-            top: 25px;
-        visibility: hidden;
-        transition: visibility 0s ease 0.6s;
+    content: 'Shorts';
 }
 .left-container li:nth-child(3)::after {
-    position: absolute;
     content: 'Subscriptions';
-    padding: 5px 10px;
-    background: #434343;
-    border: 1px solid white;
-    left: 50px;
-    top: 25px;
-    visibility: hidden;
-    transition-property: visibility;
-        transition-duration: 0s;
-        transition-delay: 0.5s;
 }
 .left-container li:nth-child(4)::after {
-    position: absolute;
     content: 'Library';
-    padding: 5px 10px;
-    background: #434343;
-    border: 1px solid white;
-    left: 50px;
-    top: 25px;
-    visibility: hidden;
-    transition: visibility 0s ease 0.6s;
 }
+
 .left-container li:hover::after {
     visibility: visible;
 }
@@ -630,4 +604,10 @@ small {
 .shorts-vid > div:nth-last-child(-n+2) {
     display: none;
 }
+}
+
+@media screen and (max-width: 540px) {
+    section, nav {
+        width: 200%;
+    }
 }
