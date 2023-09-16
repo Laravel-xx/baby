@@ -547,7 +547,7 @@ small {
 /* onclick */
 
 .left-container {
-display: none;
+
 }
 
 .left-container-expand {
@@ -557,6 +557,7 @@ display: none;
     position: sticky;
     top: 60px;
     height: 100%;
+        display: none;
 }
 
 .left-container-expand hr {
@@ -597,10 +598,9 @@ display: none;
     width: 20px;
 }
 
- .right-container {
+/* .right-container {
     flex: 4.5;
-    height: 100vh;
-} 
+} */
 
 /* media query for tab */
 
@@ -630,6 +630,4 @@ display: none;
 .shorts-vid > div:nth-last-child(-n+2) {
     display: none;
 }
-
-
 }
